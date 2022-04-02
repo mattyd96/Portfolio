@@ -15,17 +15,18 @@ const ProjectCard = (props) => {
     >
       <Image
         src={props.image}
+        className={classes.bgImage}
         gridColumnStart={1}
         gridColumnEnd={2}
         gridRowStart={1}
         gridRowEnd={2}
         boxSize="100%"
         objectFit="cover"
-        filter={"blur(2px)"}
         zIndex={1}
       ></Image>
       <Heading
         as="h3"
+        className={classes.title}
         justifySelf={"top"}
         gridColumnStart={1}
         gridColumnEnd={2}
@@ -44,7 +45,7 @@ const ProjectCard = (props) => {
         gridRowStart={1}
         gridRowEnd={2}
         zIndex={3}
-        bg='hsla(0,0%,0%, .25)'
+        //bg='hsla(0,0%,0%, .25)'
       >
         <Button>Github</Button>
         <Button>LiveSite</Button>

@@ -1,5 +1,9 @@
-.btns {
+.btns, .title {
   display: none;
+}
+
+.card:hover .title {
+  display: block;
 }
 .card:hover .btns, .card:active .btns {
   display: Flex;
@@ -8,4 +12,8 @@
   justify-content: center;
   gap: 1rem;
   padding: 2rem;
+}
+
+.card:hover .bgImage {
+  filter:blur(20px);
 }
