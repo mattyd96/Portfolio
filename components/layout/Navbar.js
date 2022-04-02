@@ -3,9 +3,9 @@ import NavLinks from './links/NavLinks';
 
 const Navbar = props => {
   return (
-    <Flex px='2rem' py='1rem'>
+    <Flex px='2rem' height='3rem'>
       <Center>
-        Matthew Durflinger
+        <Heading fontFamily='Sora' fontSize='xl' fontWeight='bold'>Matthew Durflinger</Heading>
       </Center>
       <Spacer />
       <NavLinks />
