@@ -4,13 +4,13 @@ import { HStack, Link } from "@chakra-ui/react";
 const DesktopLinks = () => {
   return (
     <HStack spacing='1rem' display={['none','none','block','block']}>
-      <NextLink href='#' passHref>
+      <NextLink href='/' passHref>
         <Link>Home</Link>
       </NextLink>
       <NextLink href='#' passHref>
         <Link>About Me</Link>
       </NextLink>
-      <NextLink href='#' passHref>
+      <NextLink href='/projects' passHref>
         <Link>Projects</Link>
       </NextLink>
       <NextLink href='#' passHref>

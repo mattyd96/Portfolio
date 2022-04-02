@@ -1,0 +1,11 @@
+.btns {
+  display: none;
+}
+.card:hover .btns, .card:active .btns {
+  display: Flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  gap: 1rem;
+  padding: 2rem;
+}

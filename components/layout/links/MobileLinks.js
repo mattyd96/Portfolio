@@ -12,7 +12,7 @@ const MobileLinks = () => {
         variant="outline"
         display={['block','block','none','none']}
       />
-      <MenuList display={['block','block','none','none']}>
+      <MenuList display={['block','block','none','none']} zIndex='1000'>
         <NextLink href='#' passHref>
           <MenuItem>Home</MenuItem>
         </NextLink>

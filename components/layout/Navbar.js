@@ -3,7 +3,7 @@ import NavLinks from './links/NavLinks';
 
 const Navbar = props => {
   return (
-    <Flex px='2rem' height='3rem'>
+    <Flex height='3rem'>
       <Center>
         <Heading fontFamily='Sora' fontSize='xl' fontWeight='bold'>Matthew Durflinger</Heading>
       </Center>
