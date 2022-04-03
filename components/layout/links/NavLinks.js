@@ -2,11 +2,11 @@ import { Center } from "@chakra-ui/react";
 import DesktopLinks from "./DesktopLinks";
 import MobileLinks from "./MobileLinks";
 
-const NavLinks = () => {
+const NavLinks = props => {
   return (
     <Center>
-      <MobileLinks />
-      <DesktopLinks />
+      <MobileLinks onOpen={props.onOpen} onClose={props.onClose}/>
+      <DesktopLinks onOpen={props.onOpen} onClose={props.onClose}/>
     </Center>
   );
 };

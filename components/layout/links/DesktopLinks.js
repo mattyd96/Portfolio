@@ -1,8 +1,8 @@
 import NextLink from "next/Link"
-import { HStack, Link, Button, useColorMode } from "@chakra-ui/react";
+import { HStack, Link, Button, useColorMode, useDisclosure } from "@chakra-ui/react";
 import { MoonIcon, SunIcon } from "@chakra-ui/icons";
 
-const DesktopLinks = () => {
+const DesktopLinks = props => {
   const { colorMode, toggleColorMode } = useColorMode();
 
   return (
@@ -17,7 +17,7 @@ const DesktopLinks = () => {
         <Link>Projects</Link>
       </NextLink>
       <NextLink href='#' passHref>
-        <Link>Contact</Link>
+        <Link onClick={props.onOpen}>Contact</Link>
       </NextLink>
       <NextLink href='#' passHref>
         <Link>Resume</Link>
