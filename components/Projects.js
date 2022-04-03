@@ -12,7 +12,7 @@ const Projects = props => {
       {/* Grid Section */}
       <Grid gap='1rem' templateRows='1fr' templateColumns={['repeat(1, 1fr)','repeat(1, 1fr)','repeat(2, 1fr)','repeat(3, 1fr)','repeat(3, 1fr)','repeat(4, 1fr)']} mt='2rem'>
         {/* Heading title */}
-        <Box gridColumn={[1, 1, 2]} gridRowStart={1} gridRowEnd={2} alignSelf='center' justifySelf={'center'}>
+        <Box gridColumn={[1, 1, 2]} gridRowStart={1} gridRowEnd={2} alignSelf='top' justifySelf={'center'}>
           <Heading as='h2' fontSize={['4rem','5rem', '6rem', '7rem', '9rem']} display={'flex'} flexDirection={['row', 'row','row', 'column']} lineHeight={['6rem', '7rem']}>
             <Text as={'span'}>Pro</Text>
             <Text as={'span'}>jects</Text>
