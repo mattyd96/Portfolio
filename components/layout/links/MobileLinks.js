@@ -18,7 +18,7 @@ const MobileLinks = () => {
         <NextLink href='/' passHref>
           <MenuItem>Home</MenuItem>
         </NextLink>
-        <NextLink href='#' passHref>
+        <NextLink href='/about' passHref>
           <MenuItem>About Me</MenuItem>
         </NextLink>
         <NextLink href='/projects' passHref>

@@ -10,7 +10,7 @@ const DesktopLinks = () => {
       <NextLink href='/' passHref>
         <Link>Home</Link>
       </NextLink>
-      <NextLink href='#' passHref>
+      <NextLink href='/about' passHref>
         <Link>About Me</Link>
       </NextLink>
       <NextLink href='/projects' passHref>
