@@ -1,4 +1,7 @@
-import { Box, Button, Grid, Heading, Image } from "@chakra-ui/react";
+import { Box, Button, Grid, Heading, Image, Flex, Spacer } from "@chakra-ui/react";
+import { Icon } from "@chakra-ui/react";
+import { GoMarkGithub } from "react-icons/go";
+import { MdOpenInBrowser } from "react-icons/md";
 import classes from "./ProjectCard.module.css";
 
 const ProjectCard = (props) => {
@@ -11,46 +14,38 @@ const ProjectCard = (props) => {
       rounded='md'
       overflow={'hidden'}
       templateColumns="1fr"
-      _hover={{ cursor: "pointer" }}
     >
       <Image
         src={props.image}
-        className={classes.bgImage}
-        gridColumnStart={1}
-        gridColumnEnd={2}
-        gridRowStart={1}
-        gridRowEnd={2}
+        gridColumn={1}
+        gridRow={1}
         boxSize="100%"
         objectFit="cover"
         zIndex={1}
       ></Image>
-      <Heading
-        as="h3"
-        fontSize={['2rem', '4rem', '1rem', '1rem', '2rem', '2.7rem']}
-        color='#fff'
-        className={classes.title}
-        justifySelf={"top"}
-        gridColumnStart={1}
-        gridColumnEnd={2}
-        gridRowStart={1}
-        gridRowEnd={2}
-        zIndex={3}
-        py={'1rem'}
-        px={'2rem'}
-      >
-        {props.title}
-      </Heading>
-      <Box
-        className={classes.btns}
-        gridColumnStart={1}
-        gridColumnEnd={2}
-        gridRowStart={1}
-        gridRowEnd={2}
+      
+      <Flex
+        className={classes.info}
+        gridColumn={1}
+        gridRow={1}
         zIndex={2}
+        height='100%'
+        direction={'column'}
+        display={'none'}
       >
-        <Button>Github</Button>
-        <Button>LiveSite</Button>
-      </Box>
+        <Heading
+          as="h3"
+          fontSize={['2rem', '4rem', '1rem', '1rem', '2rem', '2.7rem']}
+          color='#fff'
+        >
+          {props.title}
+        </Heading>
+        <Spacer />
+        <Box className={classes.links}>
+          <a href={props.github} target='blank'>Github<Icon as={GoMarkGithub} w={8} h={8} color={'blue'} /></a>
+          {props.website && <a href={props.website} target='blank'>website <Icon as={MdOpenInBrowser} w={8} h={8} color={'blue'} /></a>}
+        </Box>
+      </Flex>
     </Grid>
   );
 };
