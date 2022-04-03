@@ -13,6 +13,7 @@ const Projects = props => {
         <ProjectCard image='/images/trip_book.png' title='trip book' />
         <ProjectCard image='/images/weather-dashboard.png' title='Weather Dashboard' />
         <ProjectCard image='/images/employee-tracker.png' title='Employee SQL Node Interface' />
+        <ProjectCard image='/images/javascript-quiz.png' title='Javascript Quiz' />
         <Box gridColumn={[1, 1, 2]} gridRowStart={1} gridRowEnd={2} alignSelf='center' justifySelf={'center'}>
           <Heading as='h2' fontSize={['4rem','5rem', '6rem', '7rem', '8rem']} display={'flex'} flexDirection={['row', 'row','row', 'column']} lineHeight={'6rem'}>
             <Text as={'span'}>Pro</Text>

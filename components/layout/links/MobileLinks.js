@@ -13,13 +13,13 @@ const MobileLinks = () => {
         display={['block','block','none','none']}
       />
       <MenuList display={['block','block','none','none']} zIndex='1000'>
-        <NextLink href='#' passHref>
+        <NextLink href='/' passHref>
           <MenuItem>Home</MenuItem>
         </NextLink>
         <NextLink href='#' passHref>
           <MenuItem>About Me</MenuItem>
         </NextLink>
-        <NextLink href='#' passHref>
+        <NextLink href='/projects' passHref>
           <MenuItem>Projects</MenuItem>
         </NextLink>
         <NextLink href='#' passHref>

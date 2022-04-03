@@ -11,8 +11,8 @@ const Hero = () => {
           </Text>
         </Flex>
         <Flex minH={'8rem'} justify='center' alignItems={'center'} gap='3rem' flex='1'>
-          <Button>Contact Me</Button>
           <Button>See My Work!</Button>
+          <Button>Check out my Github</Button>
         </Flex>
         <Box fontSize={{ base: '6xl', md: '8xl'}} fontWeight='800' maxWidth={'31rem'}>
           <Text lineHeight={'3rem'}>FullStack</Text>

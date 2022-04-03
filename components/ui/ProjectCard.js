@@ -5,9 +5,9 @@ const ProjectCard = (props) => {
   return (
     <Grid
       className={classes.card}
-      minH={"15rem"}
+      minH={"17rem"}
       height={'100%'}
-      boxShadow="md"
+      boxShadow="2xl"
       rounded='md'
       overflow={'hidden'}
       templateColumns="1fr"
@@ -26,13 +26,15 @@ const ProjectCard = (props) => {
       ></Image>
       <Heading
         as="h3"
+        fontSize={['2rem', '4rem', '1rem', '1rem', '2rem', '2.7rem']}
+        color='#fff'
         className={classes.title}
         justifySelf={"top"}
         gridColumnStart={1}
         gridColumnEnd={2}
         gridRowStart={1}
         gridRowEnd={2}
-        zIndex={2}
+        zIndex={3}
         py={'1rem'}
         px={'2rem'}
       >
@@ -44,8 +46,7 @@ const ProjectCard = (props) => {
         gridColumnEnd={2}
         gridRowStart={1}
         gridRowEnd={2}
-        zIndex={3}
-        //bg='hsla(0,0%,0%, .25)'
+        zIndex={2}
       >
         <Button>Github</Button>
         <Button>LiveSite</Button>
