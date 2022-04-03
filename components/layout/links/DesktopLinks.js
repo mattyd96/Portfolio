@@ -1,7 +1,10 @@
 import NextLink from "next/Link"
-import { HStack, Link } from "@chakra-ui/react";
+import { HStack, Link, Button, useColorMode } from "@chakra-ui/react";
+import { MoonIcon, SunIcon } from "@chakra-ui/icons";
 
 const DesktopLinks = () => {
+  const { colorMode, toggleColorMode } = useColorMode();
+
   return (
     <HStack spacing='1rem' display={['none','none','block','block']}>
       <NextLink href='/' passHref>
@@ -19,6 +22,7 @@ const DesktopLinks = () => {
       <NextLink href='#' passHref>
         <Link>Resume</Link>
       </NextLink>
+      <Button onClick={toggleColorMode}>{colorMode == 'light' ? <MoonIcon /> : <SunIcon />}</Button>
     </HStack>
   );
 };

@@ -1,8 +1,10 @@
 import NextLink from "next/Link";
-import { Menu, MenuButton, MenuList, MenuItem, Link, IconButton } from "@chakra-ui/react";
-import { HamburgerIcon } from "@chakra-ui/icons"
+import { Menu, MenuButton, MenuList, MenuItem, Link, IconButton, Button, useColorMode } from "@chakra-ui/react";
+import { HamburgerIcon, MoonIcon, SunIcon } from "@chakra-ui/icons"
 
 const MobileLinks = () => {
+  const { colorMode, toggleColorMode } = useColorMode();
+
   return (
     <Menu>
       <MenuButton
@@ -28,6 +30,7 @@ const MobileLinks = () => {
         <NextLink href='#' passHref>
           <MenuItem>Resume</MenuItem>
         </NextLink>
+        <MenuItem onClick={toggleColorMode} display={'flex'} justifyContent={'space-between'}>Toggle {colorMode == 'light' ? <MoonIcon /> : <SunIcon />}</MenuItem>
       </MenuList>
     </Menu>
   );
