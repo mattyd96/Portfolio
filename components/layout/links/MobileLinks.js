@@ -30,7 +30,11 @@ const MobileLinks = () => {
         <NextLink href='#' passHref>
           <MenuItem>Resume</MenuItem>
         </NextLink>
-        <MenuItem onClick={toggleColorMode} display={'flex'} justifyContent={'space-between'}>Toggle {colorMode == 'light' ? <MoonIcon /> : <SunIcon />}</MenuItem>
+        <MenuItem onClick={toggleColorMode} display={'flex'} justifyContent={'space-between'}>
+          Toggle
+          {colorMode == 'light' ? ' Dark' : ' Light'}
+          {colorMode == 'light' ? <MoonIcon /> : <SunIcon />}
+          </MenuItem>
       </MenuList>
     </Menu>
   );

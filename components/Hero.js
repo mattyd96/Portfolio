@@ -1,6 +1,10 @@
 import NextLink from 'next/Link';
 import { Button, Flex, Spacer, Text, Box } from '@chakra-ui/react';
 
+const gotoGithub = () => {
+  window.open("https://github.com/mattyd96", "_blank");
+}
+
 const Hero = () => {
   return (
     <section>
@@ -11,11 +15,11 @@ const Hero = () => {
             to create fun and appealing applications.
           </Text>
         </Flex>
-        <Flex minH={'8rem'} justify='center' alignItems={'center'} gap='3rem' flex='1'>
+        <Flex minH={'8rem'} justify='center' direction={{base: 'column', sm: 'row'}}alignItems={'center'} gap={{base: '1rem', md: '5rem', xl: '7rem'}} flex='1'>
           <NextLink href={'/projects'}>
-            <Button>See My Work!</Button>
+            <Button h={'5rem'} w={'15rem'} fontSize={{base: '1rem', md: '1.3rem'}} fontWeight={{base: '600', md: '700'}}>See My Work!</Button>
           </NextLink>
-          <Button p={0}><a href="https://github.com/mattyd96" target='blank' style={{padding: '1rem'}}>Check out my Github</a></Button>
+          <Button p={0} h={'5rem'} w={'15rem'} onClick={gotoGithub} fontSize={{base: '1rem', md: '1.3rem'}} fontWeight={{base: '600', md: '700'}}>Check out my Github</Button>
         </Flex>
         <Box fontSize={{ base: '6xl', sm: '7xl', md: '8xl'}} fontWeight='800' maxWidth={'31rem'}>
           <Text lineHeight={'3rem'}>FullStack</Text>
