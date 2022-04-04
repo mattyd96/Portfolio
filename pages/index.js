@@ -7,7 +7,7 @@ export default function Home() {
     <Box>
       <Head>
         <title>Matthew's Portfolio</title>
-        <meta name="description" content="Matthew Durflinger's Portfolio" />
+        <meta name="description" content="Matthew Durflinger&apos;s Portfolio" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Hero />
