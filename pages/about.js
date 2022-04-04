@@ -9,9 +9,6 @@ const AboutPage = () => {
     <Box as="section" mt="2rem">
       <Flex gap="2rem" direction={{ base: "column", lg: "row" }}>
         <Box>
-          <Box>
-            <Image></Image>
-          </Box>
           <Text
             fontSize={"7rem"}
             fontWeight={"800"}

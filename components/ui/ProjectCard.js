@@ -21,6 +21,7 @@ const ProjectCard = (props) => {
     >
       <Image
         src={props.image}
+        alt={props.title}
         gridColumn={1}
         gridRow={1}
         boxSize="100%"
