@@ -1,5 +1,5 @@
 import { Grid, Heading, Box, Text, Fade } from "@chakra-ui/react";
-import ProjectCard from "./ui/ProjectCard";
+import ProjectCard from "./projects/ProjectCard";
 
 // temp holding place for project data -> currently figuring out best solution for this
 let projects = require("../data/projects.json");

@@ -6,7 +6,7 @@ const NavLinks = props => {
   return (
     <Center>
       <MobileLinks onOpen={props.onOpen} onClose={props.onClose} gotoResume={props.gotoResume}/>
-      <DesktopLinks onOpen={props.onOpen} onClose={props.onClose} gotoResume={props.gotoResume}/>
+      <DesktopLinks onOpen={props.onOpen} onClose={props.onClose}/>
     </Center>
   );
 };
