@@ -5,7 +5,7 @@ This is my portfolio written using Next.js.
 [mattyd.me](https://mattyd.me)
 
 
-![homepage screenshot](./readme-images/homepage.png)
+![homepage screenshot](./readme-images/portfolio.gif)
 
 ## Stack
 
