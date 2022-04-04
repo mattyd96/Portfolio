@@ -1,4 +1,4 @@
-import NextLink from "next/Link"
+import NextLink from "next/link"
 import { HStack, Link, Button, useColorMode, useDisclosure } from "@chakra-ui/react";
 import { MoonIcon, SunIcon } from "@chakra-ui/icons";
 

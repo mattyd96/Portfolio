@@ -1,4 +1,4 @@
-import NextLink from "next/Link";
+import NextLink from "next/link";
 import { Menu, MenuButton, MenuList, MenuItem, Link, IconButton, Button, useColorMode } from "@chakra-ui/react";
 import { HamburgerIcon, MoonIcon, SunIcon } from "@chakra-ui/icons"
 

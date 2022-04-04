@@ -1,4 +1,4 @@
-import NextLink from 'next/Link';
+import NextLink from 'next/link';
 import { Center, Flex, Spacer, Heading, useDisclosure } from "@chakra-ui/react";
 import NavLinks from './links/NavLinks';
 import { Fragment } from 'react';

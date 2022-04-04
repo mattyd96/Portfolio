@@ -1,4 +1,4 @@
-import NextLink from 'next/Link';
+import NextLink from 'next/link';
 import { Button, Flex, Spacer, Text, Box } from '@chakra-ui/react';
 
 const gotoGithub = () => {
