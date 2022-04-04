@@ -25,9 +25,7 @@ const MobileLinks = props => {
           <MenuItem>Projects</MenuItem>
         </NextLink>
         <MenuItem onClick={props.onOpen}>Contact</MenuItem>
-        <NextLink href='#' passHref>
-          <MenuItem>Resume</MenuItem>
-        </NextLink>
+        <MenuItem onClick={props.gotoResume}>Resume</MenuItem>
         <MenuItem onClick={toggleColorMode} display={'flex'} justifyContent={'space-between'}>
           Toggle
           {colorMode == 'light' ? ' Dark' : ' Light'}

@@ -16,12 +16,8 @@ const DesktopLinks = props => {
       <NextLink href='/projects' passHref>
         <Link>Projects</Link>
       </NextLink>
-      <NextLink href='#' passHref>
-        <Link onClick={props.onOpen}>Contact</Link>
-      </NextLink>
-      <NextLink href='#' passHref>
-        <Link>Resume</Link>
-      </NextLink>
+      <Link onClick={props.onOpen}>Contact</Link>
+      <Link onClick={props.gotoResume}>Resume</Link>
       <Button onClick={toggleColorMode}>{colorMode == 'light' ? <MoonIcon /> : <SunIcon />}</Button>
     </HStack>
   );

@@ -32,12 +32,12 @@ const AboutPage = () => {
             to build some applications using web3 tools and technologies, so
             please look forward to them!
           </Text>
-          <Text>
+          <Text mt='1rem'>
             When I am not coding I love spending time with my dog Sabre, learning 
             about block-chain technologies, travelling and Snowboarding. The last 
             two have been difficult to do recently, so I have a very spoiled K9 at home. 
           </Text>
-          <Text>
+          <Text mt='1rem'>
             Thankyou for checking out my Portfolio, I hope you enjoy the projects I have completed so far! 
           </Text>
           <Flex gap="7rem" mt="2rem">

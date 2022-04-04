@@ -1,8 +1,12 @@
-import { Box, Button, Grid, Heading, Image, Flex, Spacer } from "@chakra-ui/react";
-import { Icon } from "@chakra-ui/react";
+import { Box, Button, Grid, Heading, Image, Flex, Spacer, Icon, Text } from "@chakra-ui/react";
 import { GoMarkGithub } from "react-icons/go";
 import { MdOpenInBrowser } from "react-icons/md";
 import classes from "./ProjectCard.module.css";
+
+// helper -> opens link to site in a new tab
+const gotoSite = site => {
+  window.open(site, "_blank");
+}
 
 const ProjectCard = (props) => {
   return (
@@ -35,15 +39,21 @@ const ProjectCard = (props) => {
       >
         <Heading
           as="h3"
-          fontSize={['2rem', '4rem', '1rem', '1rem', '2rem', '2.7rem']}
+          fontSize={['2rem', '3rem', '2rem', '2rem', '2rem', '2.7rem']}
           color='#fff'
         >
           {props.title}
         </Heading>
         <Spacer />
         <Box className={classes.links}>
-          <a href={props.github} target='blank'>Github<Icon as={GoMarkGithub} w={8} h={8} color={'blue'} /></a>
-          {props.website && <a href={props.website} target='blank'>website <Icon as={MdOpenInBrowser} w={8} h={8} color={'blue'} /></a>}
+          <Button onClick={() => gotoSite(props.github)} display={'flex'} gap='.5rem'>
+            <Icon as={GoMarkGithub} w={7} h={7}/>
+            <Text>Github</Text>
+          </Button>
+          <Button onClick={() => gotoSite(props.website)}>
+            <Icon as={MdOpenInBrowser} w={8} h={8} />
+            <Text>Website</Text>
+          </Button>
         </Box>
       </Flex>
     </Grid>

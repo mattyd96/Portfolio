@@ -1,4 +1,4 @@
-import { Grid, Heading, Box, Text } from '@chakra-ui/react';
+import { Grid, Heading, Box, Text, Fade } from '@chakra-ui/react';
 import ProjectCard from './ui/ProjectCard';
 
 // temp holding place for project data -> currently figuring out best solution for this
@@ -12,6 +12,7 @@ const Projects = props => {
       {/* Grid Section */}
       <Grid gap='1rem' templateRows='1fr' templateColumns={['repeat(1, 1fr)','repeat(1, 1fr)','repeat(2, 1fr)','repeat(3, 1fr)','repeat(3, 1fr)','repeat(4, 1fr)']} mt='2rem'>
         {/* Heading title */}
+
         <Box gridColumn={[1, 1, 2]} gridRowStart={1} gridRowEnd={2} alignSelf='top' justifySelf={'center'}>
           <Heading as='h2' fontSize={['4rem','5rem', '6rem', '7rem', '9rem']} display={'flex'} flexDirection={['row', 'row','row', 'column']} lineHeight={['6rem', '7rem']}>
             <Text as={'span'}>Pro</Text>

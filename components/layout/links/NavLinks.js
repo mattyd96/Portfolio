@@ -5,8 +5,8 @@ import MobileLinks from "./MobileLinks";
 const NavLinks = props => {
   return (
     <Center>
-      <MobileLinks onOpen={props.onOpen} onClose={props.onClose}/>
-      <DesktopLinks onOpen={props.onOpen} onClose={props.onClose}/>
+      <MobileLinks onOpen={props.onOpen} onClose={props.onClose} gotoResume={props.gotoResume}/>
+      <DesktopLinks onOpen={props.onOpen} onClose={props.onClose} gotoResume={props.gotoResume}/>
     </Center>
   );
 };
