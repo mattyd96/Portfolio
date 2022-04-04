@@ -1,14 +1,16 @@
 # Porfolio [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-## Description
-
 This is my portfolio written using Next.js.
 
-[cool-granita-90eb86.netlify.app](cool-granita-90eb86.netlify.app)
+[mattyd.me](https://mattyd.me)
 
-Still trying to think of a domain name though ...
 
 ![homepage screenshot](./readme-images/homepage.png)
+
+## Stack
+
+- [Next.js](https://nextjs.org/) - A React framework
+- [Chakra UI](https://chakra-ui.com/) - A simple component library for React
 
 ## Getting Started
 

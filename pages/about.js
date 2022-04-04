@@ -1,4 +1,4 @@
-import { Box, Container, Flex, Image, Text, List, ListItem, ListIcon, Heading } from "@chakra-ui/react";
+import { Box, Container, Flex, Image, Text, List, ListItem, ListIcon, Heading, Grid } from "@chakra-ui/react";
 import { Icon } from "@chakra-ui/react";
 import { IoCode, IoLogoJavascript, IoLogoNodejs, IoLogoReact, IoLogoPython } from 'react-icons/io5';
 import { SiNextdotjs, SiCplusplus, SiSequelize, SiSolidity } from 'react-icons/si';
@@ -37,13 +37,13 @@ const AboutPage = () => {
           <Text mt='1rem'>
             Thankyou for checking out my Portfolio, I hope you enjoy the projects I have completed so far! 
           </Text>
-          <Flex gap="7rem" mt="2rem">
+          <Flex gap={{base:'2rem', md: '4rem', lg: '7rem'}} mt="2rem" direction={{base: 'column', md: 'row'}}>
             <Box>
               <Heading as="h3">Experience With</Heading>
-              <List spacing={3}  mt="1rem" fontSize={{ base: "1rem", md: "1.3rem", xl: "1.7rem" }}>
+              <Grid as={List} templateColumns={{base: 'repeat(3, 1fr)', lg: 'repeat(2, 1fr)', xl:'repeat(3, 1fr)'}} gap={6} mt="1rem" fontSize={{ base: "1rem", md: "1.3rem", xl: "1.7rem" }}>
                 <ListItem>
                   <ListIcon as={IoCode} />
-                  HTML and CSS
+                  HTML / CSS
                 </ListItem>
                 <ListItem>
                   <ListIcon as={IoLogoJavascript} />
@@ -67,7 +67,7 @@ const AboutPage = () => {
                 </ListItem>
                 <ListItem>
                   <ListIcon as={SiSequelize} />
-                  Sequelize ovm
+                  Sequelize
                 </ListItem>
                 <ListItem>
                   <ListIcon as={SiCplusplus} />
@@ -77,7 +77,7 @@ const AboutPage = () => {
                   <ListIcon as={IoLogoPython} />
                   Python
                 </ListItem>
-              </List>
+              </Grid>
             </Box>
             <Box>
               <Heading as="h3">Early Days</Heading>

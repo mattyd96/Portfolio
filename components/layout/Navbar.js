@@ -5,7 +5,7 @@ import { Fragment } from 'react';
 import ContactDrawer from './ContactDrawer';
 
 const gotoResume = () => {
-  window.open('https://docs.google.com/document/d/e/2PACX-1vRSN996r_8cIKOS7kvLWIAhsXmaQ8k2PdF5oXWTRrEPZe9RbBhHSBlhssSBJXpOrCpt3GJtStmyq4X6/pub', 'blank');
+  window.open('https://docs.google.com/document/d/1U9uNR5Uw96ogn3mztNes73d-I1N01Sv23sBiSXWEXDo/edit?usp=sharing', 'blank');
 }
 
 const Navbar = props => {
