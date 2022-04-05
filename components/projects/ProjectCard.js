@@ -27,6 +27,7 @@ const ProjectCard = (props) => {
         boxSize="100%"
         objectFit="cover"
         zIndex={1}
+        loading="eager"
       ></Image>
       
       <Flex
