@@ -11,6 +11,7 @@ This is my portfolio written using Next.js.
 
 - [Next.js](https://nextjs.org/) - A React framework
 - [Chakra UI](https://chakra-ui.com/) - A simple component library for React
+- [Framer motion](https://www.framer.com/motion/) - A react animation library
 
 ## Getting Started
 
@@ -24,8 +25,6 @@ Then, run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
 ```
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
