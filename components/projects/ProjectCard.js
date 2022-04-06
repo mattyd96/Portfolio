@@ -1,4 +1,5 @@
 import { Box, Button, Grid, Heading, Image, Flex, Spacer, Icon, Text } from "@chakra-ui/react";
+import { motion } from "framer-motion"
 import { GoMarkGithub } from "react-icons/go";
 import { MdOpenInBrowser } from "react-icons/md";
 import classes from "./ProjectCard.module.css";
@@ -10,7 +11,9 @@ const gotoSite = site => {
 
 const ProjectCard = (props) => {
   return (
-    <Grid
+    <Box
+      as={motion.div}
+      display={'grid'}
       className={classes.card}
       minH={"17rem"}
       height={'100%'}
@@ -18,6 +21,9 @@ const ProjectCard = (props) => {
       rounded='md'
       overflow={'hidden'}
       templateColumns="1fr"
+      initial={{ y: "100%", opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{ duration: 10 }}
     >
       <Image
         src={props.image}
@@ -58,7 +64,7 @@ const ProjectCard = (props) => {
           </Button>
         </Box>
       </Flex>
-    </Grid>
+    </Box>
   );
 };
 

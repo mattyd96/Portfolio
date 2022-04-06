@@ -1,4 +1,5 @@
 import { Grid, Heading, Box, Text, Fade } from "@chakra-ui/react";
+import { motion } from "framer-motion";
 import ProjectCard from "./projects/ProjectCard";
 
 // temp holding place for project data -> currently figuring out best solution for this
@@ -26,11 +27,15 @@ const Projects = (props) => {
         {/* Heading title */}
 
         <Box
+          as={motion.div}
           gridColumn={[1, 1, 2]}
           gridRowStart={1}
           gridRowEnd={2}
           alignSelf="top"
           justifySelf={"center"}
+          initial={{ y: "-100%", opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ duration: 10 }}
         >
           <Heading
             as="h2"
