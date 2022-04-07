@@ -13,7 +13,6 @@ import quiz from '../../public/images/javascript-quiz.png'
 
 // temp holding place for project data -> currently figuring out best solution for this
 import projects from "../../data/projects.json";
-//let projects = require("../../data/projects.json");
 
 const Projects = (props) => {
   return (
