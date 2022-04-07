@@ -12,7 +12,8 @@ import employeeTracker from '../../public/images/employee-tracker.png'
 import quiz from '../../public/images/javascript-quiz.png'
 
 // temp holding place for project data -> currently figuring out best solution for this
-let projects = require("../../data/projects.json");
+import projects from "../../data/projects.json";
+//let projects = require("../../data/projects.json");
 
 const Projects = (props) => {
   return (
