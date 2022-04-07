@@ -2,17 +2,10 @@ import { Grid, Heading, Box, Text, Fade } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 import ProjectCard from "./ProjectCard";
 
-// import images
-import techBlog from '../../public/images/tech-blog-mobile.png';
-import agencyPage from '../../public/images/agency-landing-page.png';
-import calculator from '../../public/images/calculator.jpg';
-import tripBook from '../../public/images/trip-book.png';
-import weatherDash from '../../public/images/weather-dashboard.png'
-import employeeTracker from '../../public/images/employee-tracker.png'
-import quiz from '../../public/images/javascript-quiz.png'
-
 // temp holding place for project data -> currently figuring out best solution for this
-import projects from "../../data/projects.json";
+let projects = require("../../data/projects.json");
+let hero = projects[0];
+let otherProjects = projects.slice(1);
 
 const Projects = (props) => {
   return (
@@ -59,57 +52,23 @@ const Projects = (props) => {
         {/* Hero Project */}
         <Box gridRowStart={[2, 2, 1]} gridRowEnd={[2, 2, 3]} gridColumn={1}>
           <ProjectCard
-            image={techBlog}
-            title={projects[0].title}
-            website={projects[0].website}
-            github={projects[0].github}
-            key={projects[0].id}
+            image={hero.image}
+            title={hero.title}
+            website={hero.website}
+            github={hero.github}
           />
         </Box>
 
         {/* Remaining Projects */}
-        <ProjectCard
-          image={agencyPage}
-          title={projects[1].title}
-          website={projects[1].website}
-          github={projects[1].github}
-          key={projects[1].id}
-        />
-        <ProjectCard
-          image={calculator}
-          title={projects[2].title}
-          website={projects[2].website}
-          github={projects[2].github}
-          key={projects[2].id}
-        />
-        <ProjectCard
-          image={tripBook}
-          title={projects[3].title}
-          website={projects[3].website}
-          github={projects[3].github}
-          key={projects[3].id}
-        />
-        <ProjectCard
-          image={weatherDash}
-          title={projects[4].title}
-          website={projects[4].website}
-          github={projects[4].github}
-          key={projects[4].id}
-        />
-        <ProjectCard
-          image={employeeTracker}
-          title={projects[5].title}
-          website={projects[5].website}
-          github={projects[5].github}
-          key={projects[5].id}
-        />
-        <ProjectCard
-          image={quiz}
-          title={projects[6].title}
-          website={projects[6].website}
-          github={projects[6].github}
-          key={projects[6].id}
-        />
+        {otherProjects.map((project) => (
+          <ProjectCard
+            image={project.image}
+            title={project.title}
+            website={project.website}
+            github={project.github}
+            key={project.id}
+          />
+        ))}
       </Grid>
     </section>
   );

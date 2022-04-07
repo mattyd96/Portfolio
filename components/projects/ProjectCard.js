@@ -1,5 +1,4 @@
-import { Box, Button, Grid, Heading, Flex, Spacer, Icon, Text } from "@chakra-ui/react";
-import Image from "next/image";
+import { Box, Button, Grid, Heading, Flex, Spacer, Icon, Text, Image } from "@chakra-ui/react";
 import { motion } from "framer-motion"
 import { GoMarkGithub } from "react-icons/go";
 import { MdOpenInBrowser } from "react-icons/md";
@@ -28,10 +27,12 @@ const ProjectCard = (props) => {
       transition={{ duration: 20 }}
     >
       <Image
-        className={classes.grid_place}
         src={props.image}
         alt={props.title}
-        layout='fill'
+        gridColumn={1}
+        gridRow={1}
+        boxSize="100%"
+        objectFit="cover"
         zIndex={1}
         placeholder='blur'
       />
