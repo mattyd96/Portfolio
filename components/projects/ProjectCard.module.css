@@ -33,3 +33,8 @@
 .links a:hover {
   cursor: pointer;
 }
+
+.grid_place {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
