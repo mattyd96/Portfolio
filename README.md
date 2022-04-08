@@ -11,7 +11,7 @@ This is my portfolio written using Next.js.
 
 - [Next.js](https://nextjs.org/) - A React framework
 - [Chakra UI](https://chakra-ui.com/) - A simple component library for React
-- [framer-motion] - A React animation library
+- [framer-motion](https://www.framer.com/motion/) - A React animation library
 
 ## Getting Started
 
