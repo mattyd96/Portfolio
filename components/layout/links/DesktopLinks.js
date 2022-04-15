@@ -18,7 +18,7 @@ const DesktopLinks = props => {
       </NextLink>
       <Link onClick={props.onOpen}>Contact</Link>
       <Link href='https://docs.google.com/document/d/1U9uNR5Uw96ogn3mztNes73d-I1N01Sv23sBiSXWEXDo/edit?usp=sharing' target='blank'>Resume</Link>
-      <Button onClick={toggleColorMode}>{colorMode == 'light' ? <MoonIcon /> : <SunIcon />}</Button>
+      <Button onClick={toggleColorMode} name='light and dark mode toggle'>{colorMode == 'light' ? <MoonIcon /> : <SunIcon />}</Button>
     </HStack>
   );
 };

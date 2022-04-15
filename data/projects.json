@@ -2,49 +2,49 @@
   {
     "id": 1,
     "title" : "Tech Blog",
-    "image" : "/images/tech-blog-mobile.webp",
+    "image" : "/images/tech-blog-mobile-min.png",
     "website" : "https://secret-brook-21247.herokuapp.com/",
     "github" : "https://github.com/mattyd96/mvc-tech-blog"
   },
   {
     "id": 2,
     "title" : "Agency Landing Page",
-    "image" : "/images/agency-landing-page.webp",
+    "image" : "/images/agency-landing-page-min.png",
     "website" : "https://competent-curran-7e763a.netlify.app/",
     "github" : "https://github.com/mattyd96/sunnyside-agency-landing-page"
   },
   {
     "id": 3,
     "title" : "JS Calculator",
-    "image" : "/images/calculator.webp",
+    "image" : "/images/calculator.jpg",
     "website" : "https://elastic-hawking-e589ed.netlify.app/",
     "github" : "https://github.com/mattyd96/calculator-app"
   },
   {
     "id": 4,
     "title" : "Trip Book",
-    "image" : "/images/trip-book.webp",
+    "image" : "/images/trip-book-min.png",
     "website" : "https://still-sands-96331.herokuapp.com/",
     "github" : "https://github.com/mattyd96/trip-book"
   },
   {
     "id": 5,
     "title" : "Weather Dashboard",
-    "image" : "/images/weather-dashboard.webp",
+    "image" : "/images/weather-dashboard-min.png",
     "website" : "https://mattyd96.github.io/weather-dashboard/",
     "github" : "https://github.com/mattyd96/weather-dashboard"
   },
   {
     "id": 6,
     "title" : "Node SQL Interface",
-    "image" : "/images/employee-tracker.webp",
+    "image" : "/images/employee-tracker-min.png",
     "website" : null,
     "github" : "https://github.com/mattyd96/employee-tracker"
   },
   {
     "id": 7,
     "title" : "Javascript Quiz",
-    "image" : "/images/javascript-quiz.webp",
+    "image" : "/images/javascript-quiz-min.png",
     "website" : "https://mattyd96.github.io/javascript-simple-quiz/",
     "github" : "https://github.com/mattyd96/javascript-simple-quiz"
   }
