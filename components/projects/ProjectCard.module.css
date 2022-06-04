@@ -2,6 +2,10 @@
   display: none;
 }
 
+.card:hover {
+  cursor: pointer;
+}
+
 .card:hover .info, .card:active .info {
   display: Flex;
   flex-direction: column;

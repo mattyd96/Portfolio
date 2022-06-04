@@ -54,6 +54,8 @@ const Projects = (props) => {
           <ProjectCard
             image={hero.image}
             title={hero.title}
+            description={hero.description}
+            technologies={hero.technologies}
             website={hero.website}
             github={hero.github}
           />
@@ -64,6 +66,8 @@ const Projects = (props) => {
           <ProjectCard
             image={project.image}
             title={project.title}
+            description={project.description}
+            technologies={project.technologies}
             website={project.website}
             github={project.github}
             key={project.id}

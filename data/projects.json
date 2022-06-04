@@ -1,51 +1,74 @@
 [
   {
     "id": 1,
-    "title" : "Tech Blog",
-    "image" : "/images/tech-blog-mobile-min.png",
-    "website" : "https://secret-brook-21247.herokuapp.com/",
-    "github" : "https://github.com/mattyd96/mvc-tech-blog"
+    "title" : "Key[Board]",
+    "image" : "/images/keyboard.png",
+    "website" : "https://sparkling-jalebi-05b27e.netlify.app",
+    "github" : "https://github.com/mattyd96/keyboard-Inventory-app",
+    "technologies": ["Typescript", "React 18", "Mantine React Library", "Express", "Nodejs", "MongoDB", "Mongoose", "GraphQL", "Apollo Server and Client"],
+    "description": "A Merng Full-stack app with a Typescript Front-end for keeping an inventory for Custom Mechanical keyboards. It allows users to keep track of parts used for keyboards and what they have built. This is still a work in progress as I hope to add the ability for users to share their creations with friends among other imporovements."
   },
   {
     "id": 2,
-    "title" : "Agency Landing Page",
-    "image" : "/images/agency-landing-page-min.png",
-    "website" : "https://competent-curran-7e763a.netlify.app/",
-    "github" : "https://github.com/mattyd96/sunnyside-agency-landing-page"
+    "title" : "Tech Blog",
+    "image" : "/images/tech-blog-desktop-min.png",
+    "website" : "https://secret-brook-21247.herokuapp.com/",
+    "github" : "https://github.com/mattyd96/mvc-tech-blog",
+    "technologies": ["Express", "Nodejs", "Handlebars", "Sequelize", "MySQL2"],
+    "description": "A Full-stack Blog website where users can log in, view, post, and comment on other users posts. This Includes editing and deleting ones own posts."
   },
   {
     "id": 3,
-    "title" : "JS Calculator",
-    "image" : "/images/calculator.jpg",
-    "website" : "https://elastic-hawking-e589ed.netlify.app/",
-    "github" : "https://github.com/mattyd96/calculator-app"
+    "title" : "Agency Landing Page",
+    "image" : "/images/agency-landing-page-min.png",
+    "website" : "https://competent-curran-7e763a.netlify.app/",
+    "github" : "https://github.com/mattyd96/sunnyside-agency-landing-page",
+    "technologies" : ["HTML", "CSS", "SASS", "JavaScript"],
+    "description" : "A Front-end website page created as part of a Frontend mentor Challenge. The main focus of this project was to use Front-end markup language skills to produce a page to the challenges design specifications"
   },
   {
     "id": 4,
-    "title" : "Trip Book",
-    "image" : "/images/trip-book-min.png",
-    "website" : "https://still-sands-96331.herokuapp.com/",
-    "github" : "https://github.com/mattyd96/trip-book"
+    "title" : "JS Calculator",
+    "image" : "/images/calculator.jpg",
+    "website" : "https://elastic-hawking-e589ed.netlify.app/",
+    "github" : "https://github.com/mattyd96/calculator-app",
+    "technologies" : ["HTML", "CSS", "SASS", "JavaScript"],
+    "description" : "A fully functional calculator powered by Javascript. Created as part of a FrontendMentor challenge and designed to the style specifications given."
   },
   {
     "id": 5,
-    "title" : "Weather Dashboard",
-    "image" : "/images/weather-dashboard-min.png",
-    "website" : "https://mattyd96.github.io/weather-dashboard/",
-    "github" : "https://github.com/mattyd96/weather-dashboard"
+    "title" : "Trip Book",
+    "image" : "/images/trip-book-min.png",
+    "website" : "https://still-sands-96331.herokuapp.com/",
+    "github" : "https://github.com/mattyd96/trip-book",
+    "technologies" : ["Express", "Nodejs", "Handlebars", "Sequelize", "MySQL2", "Tailwind CSS Library", "@shopify/draggable", "Munter.js"],
+    "description" : "A group project for an app that allows users to create Itineraries and share pictures for a trip within a group. This required coordination over github and proper delegation of responsiblities to get it done in a condensed time frame. My responsibilities mainly partained to creating the database models, controllers for the server, and creating the draggable kanban board interface for the itinerary section."
   },
   {
     "id": 6,
-    "title" : "Node SQL Interface",
-    "image" : "/images/employee-tracker-min.png",
-    "website" : null,
-    "github" : "https://github.com/mattyd96/employee-tracker"
+    "title" : "Weather Dashboard",
+    "image" : "/images/weather-dashboard-min.png",
+    "website" : "https://mattyd96.github.io/weather-dashboard/",
+    "github" : "https://github.com/mattyd96/weather-dashboard",
+    "technologies" : ["HTML", "CSS", "JavaScript", "OpenWeather API's"],
+    "description" : "A weather dashboard that allows a user to enter a location and get the weather for the following weeks weather. It intigrates an OpenWeather API to get location and weather information. Local Storage is used to save user prefferences and previous searches."
   },
   {
     "id": 7,
+    "title" : "Node SQL Interface",
+    "image" : "/images/employee-tracker-min.png",
+    "website" : null,
+    "github" : "https://github.com/mattyd96/employee-tracker",
+    "technologies" : ["Nodejs", "Inquirer.js", "console.table", "MySQL2"],
+    "description" : "A terminal interface application that allows a user to manage a database of employees. The data is persisted through an SQL database that orgainizes and maintains relationships between employees and departments."
+  },
+  {
+    "id": 8,
     "title" : "Javascript Quiz",
     "image" : "/images/javascript-quiz-min.png",
     "website" : "https://mattyd96.github.io/javascript-simple-quiz/",
-    "github" : "https://github.com/mattyd96/javascript-simple-quiz"
+    "github" : "https://github.com/mattyd96/javascript-simple-quiz",
+    "technologies" : ["HTML", "CSS", "JavaScript"],
+    "description" : "A simple timed korean quiz that keeps track of user scores through local storage. The DOM reacts to user input using Javascript to advance the quiz and collect scores."
   }
 ]
