@@ -59,17 +59,6 @@ const ProjectCard = (props) => {
           >
             {props.title}
           </Heading>
-          {/* <Spacer />
-          <Box className={classes.links}>
-            <Button onClick={() => gotoSite(props.github)} display={'flex'} gap='.5rem'>
-              <Icon as={GoMarkGithub} w={7} h={7}/>
-              <Text>Github</Text>
-            </Button>
-            <Button onClick={() => gotoSite(props.website)}>
-              <Icon as={MdOpenInBrowser} w={8} h={8} />
-              <Text>Website</Text>
-            </Button>
-          </Box> */}
         </Flex>
       </Box>
       <ProjectDrawer {...props} gotoSite={gotoSite} isOpen={isOpen} onOpen={onOpen} onClose={onClose} />
