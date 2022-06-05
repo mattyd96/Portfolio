@@ -59,10 +59,15 @@ const ProjectDrawer = (props) => {
                 <Icon as={GoMarkGithub} w={7} h={7} />
                 <Text>Github</Text>
               </Button>
-              <Button onClick={() => props.gotoSite(props.website)}>
-                <Icon as={MdOpenInBrowser} w={8} h={8} />
-                <Text>Website</Text>
-              </Button>
+              {props.website && 
+                <Button onClick={() => props.gotoSite(props.website)}                 
+                  display={"flex"}
+                  gap=".4rem"
+                >
+                  <Icon as={MdOpenInBrowser} w={8} h={8} />
+                  <Text>Website</Text>
+                </Button>
+              }
             </Box>
           </DrawerBody>
         </DrawerContent>
