@@ -1,6 +1,6 @@
 import { Box, Flex, Image, Text, List, ListItem, ListIcon, Heading, Grid } from "@chakra-ui/react";
 import { IoCode, IoLogoJavascript, IoLogoNodejs, IoLogoReact, IoLogoPython } from 'react-icons/io5';
-import { SiNextdotjs, SiCplusplus, SiSequelize, SiSolidity } from 'react-icons/si';
+import { SiNextdotjs, SiCplusplus, SiSequelize, SiSolidity, SiTypescript, SiMongodb, SiGraphql, SiApollographql } from 'react-icons/si';
 import { DiMysql } from 'react-icons/di';
 
 const About = () => {
@@ -49,6 +49,10 @@ const About = () => {
                   Javascript
                 </ListItem>
                 <ListItem>
+                  <ListIcon as={SiTypescript} />
+                  Typescript
+                </ListItem>
+                <ListItem>
                   <ListIcon as={IoLogoReact} />
                   React
                 </ListItem>
@@ -67,6 +71,18 @@ const About = () => {
                 <ListItem>
                   <ListIcon as={SiSequelize} />
                   Sequelize
+                </ListItem>
+                <ListItem>
+                  <ListIcon as={SiMongodb} />
+                  MongoDB
+                </ListItem>
+                <ListItem>
+                  <ListIcon as={SiGraphql} />
+                  GraphQL
+                </ListItem>
+                <ListItem>
+                  <ListIcon as={SiApollographql} />
+                  Apollo
                 </ListItem>
                 <ListItem>
                   <ListIcon as={SiCplusplus} />
